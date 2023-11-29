@@ -1,0 +1,175 @@
+Modelo Carro
+Nome
+Marca
+Cambio
+Alimentação
+Portas
+
+ligarDesligar();
+trocarMarcha();
+acelerar();
+freiar();
+buzinar();
+
+
+
+//Carro Numero 1
+nome = "Renault Duster";
+marca = "Renault";
+cambio = "manual";
+alimentação = "gasolina";
+portas = 4;
+
+var carroLigado = false;
+var seguraEmbreagem = false;
+var marcha;
+ligarDesligar(){
+	if (carroLigado == false){
+	carroLigado = true;
+	console.log("O carro foi ligado.");
+	} else {
+	carroLigado = false;
+	console.log("O carro foi desligado.");
+	}
+}
+trocarMarcha(){
+	seguraEmbreagem = true;
+	marcha = parseFloat(prompt("Para qual marcha deseja mudar?");
+	seguraEmbreagem = false;
+}
+acelerar(marchaAtual){
+	if(carroLigado == true){
+	console.log("Acelerando carro usando marcha: " + marchaAtual);
+	}
+}
+freiar(){
+	console.log("Freiando carro");
+}
+buzinar(){
+	console.log("*FOOOOOOM!");
+}
+
+
+//Carro Numero 2
+nome = "Fiat Argo 1.3 Drive CVT";
+marca = "Fiat";
+cambio = "automatico"
+alimentação = "gasolina";
+portas = 4;
+
+var carroLigado = false;
+var marcha;
+ligarDesligar(){
+	if (carroLigado == false){
+	carroLigado = true;
+	console.log("O carro foi ligado.");
+	} else {
+	carroLigado = false;
+	console.log("O carro foi desligado.");
+	}
+}
+/*Apesar da variavel/função ainda ser chamada marcha, como é um carro automatico ele usa cambios "P","R","N" e "DX" que X deve ser um numero*/
+trocarMarcha(){
+	marcha = parseFloat(prompt("Para qual marcha deseja mudar?");
+}
+acelerar(marchaAtual){
+	if(carroLigado == true){
+	console.log("Acelerando carro usando marcha: " + marchaAtual);
+	}
+}
+freiar(){
+	console.log("Freiando carro");
+}
+buzinar(){
+	console.log("*FOOOOOOM!");
+}
+
+
+
+Modelo Teclado:
+Nome
+Marca
+Conexão (com fio, sem fio, cabo flat)
+Tecnologia nas teclas
+Linguagem
+Teclas Numpad
+
+conectar();
+enviarTecla(teclaPressionada);
+ligarFunção(teclaPressionada);
+
+
+//Teclado Numero 1
+nome = "Teclado Logitech K120";
+marca = "Logitech";
+conexão = "Com fio";
+tecnologia = "Teclas de membrana"
+linguagem = "Inter US"
+numpad = true;
+
+var tecladoConectado = false;
+var numpad = true;
+var capsLockFunc = false;
+var scrollLockFunc = false;
+var numLockFunc = false;
+conectar(){
+	if (tecladoConectado == false){
+	tecladoConectado = true;
+	console.log("O teclado foi conectado.");
+	} else {
+	tecladoConectado = false;
+	console.log("O teclado foi desconectado.");
+	}
+}
+enviarTecla(teclaPressionada){
+	console.log("Enviado pro Software o comando da tecla: " + teclaPressionada);
+}
+ligarFunção(teclaPressionada){
+	if(teclaPressionada == "capslock"){
+		capsLockFunc = !capsLockFunc;
+	}
+	else if (teclaPressionada == "numpad" && numpad == true){
+		numLockFunc = !numLockFunc;
+	}
+	else if (teclaPressionada == "scrolllock") {
+		scrollLockFunc = !scrollLockFunc;
+	}
+}
+
+
+//Teclado Numero 2
+nome = "Teclado Razer Blackwidow V3"
+marca = "Razer";
+conexão = "Com fio";
+tecnologia = "Teclas Mecânicas";
+linguagem = "Inter US";
+numpad = false;
+
+var tecladoConectado = false;
+var numpad = false;
+var capsLockFunc = false;
+var scrollLockFunc = false;
+var numLockFunc = false;
+conectar(){
+	if (tecladoConectado == false){
+	tecladoConectado = true;
+	console.log("O teclado foi conectado.");
+	} else {
+	tecladoConectado = false;
+	console.log("O teclado foi desconectado.");
+	}
+}
+enviarTecla(teclaPressionada){
+	console.log("Enviado pro Software o comando da tecla: " + teclaPressionada);
+}
+ligarFunção(teclaPressionada){
+	if(teclaPressionada == "capslock"){
+		capsLockFunc = !capsLockFunc;
+	}
+	else if (teclaPressionada == "numpad" && numpad == true){
+		numLockFunc = !numLockFunc;
+	}
+	else if (teclaPressionada == "scrolllock") {
+		scrollLockFunc = !scrollLockFunc;
+	}
+}
